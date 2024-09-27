@@ -379,3 +379,62 @@
     - Resultado Final (Number: resultado)
     - Ficha técnica anexada pelo sistema (String: ficha_tecnica_nome)
     - imagens (Array: imagens)
+
+ ## - Orçamentos (Menu)
+ ### - Gerar Orçamento (SubMenu)
+ ### Endpoint - /orcamentos 
+ ### List
+    - Numero (Number: numero)
+    - Cliente (String: pre_cadastro.nome_razao_social)
+    - Vendedor (String: vendedor.parceiro.nome_razao_facial)
+    - Criado em (Date: created_at)
+    - Previsão da Entrega (Date: previsao_entrega)
+    - Referência (String: referencia)
+    - Modelo (String: modelo.descricao)
+    - Tabela de Preço. (Object: tabela_preco_fabrica)
+    - Valor Unitário (Number: precificacao.valor_unitario_vendedor)
+    - Quantidade (Boolean: precificacao.quantidade)
+    - Valor Total (Number: precificacao.valor_final)
+    - Status (String: status)
+
+ ### - Controle de Orçamentos (SubMenu)
+ ### Endpoint - /orcamentos 
+ ### List
+    - Numero (Number: numero)
+    - Cliente (String: pre_cadastro.nome_razao_social)
+    - Vendedor (String: vendedor.parceiro.nome_razao_facial)
+    - Criado em (Date: created_at)
+    - Previsão da Entrega (Date: previsao_entrega)
+    - Referência (String: referencia)
+    - Modelo (String: modelo.descricao)
+    - Tabela de Preço. (Object: tabela_preco_fabrica)
+    - Valor Unitário (Number: precificacao.valor_unitario_vendedor)
+    - Quantidade (Boolean: precificacao.quantidade)
+    - Valor Total (Number: precificacao.valor_final)
+    - Status (String: status)
+
+ ## - Financeiro (Menu)
+ ### - Movimentação Financeira (SubMenu)
+ ### Endpoint - /movimentacao_financeiras 
+ ### List
+    - Conta/Parcela
+    - Fornecedor (String: conta_pagar_parcelas.conta_pagar.fornecedor.parceiro.nome_razao_social)
+    - Emitido Dia (Date: conta_pagar_parcelas.created_at)
+    - Cobrança (Number: conta_pagar_parcelas.cobranca)
+    - Vencimento (Date: conta_pagar_parcelas.vencimento)
+    - VL Parcela (Number: conta_pagar_parcelas.conta_pagar.valor_total)
+    - Dias (Number: ?)
+    - Juros (Number: conta_pagar_parcelas.valor_juros)
+    - VL desconto (Number: conta_pagar_parcelas.forma_pagto.nome)
+    - Data pagamento (Date: conta_pagar_parcelas.pagamentos.data_hora)
+    - VL Pago (Number: conta_pagar_parcelas.pagamentos.valor)
+    - VL Pagar (Number: conta_pagar_parcelas.valor_total)
+    - VL com juros (Number: totais.total_com_juros)
+    - Status (String: conta_pagar_parcelas.status)
+    - Qtd de parcelas (Number: totais.qtd_parcelas)
+    - Total a pagar (Number: totais.total)
+    - Total de juros (Number: totais.total_juros)
+    - Total de desconto (Number: totais.total_desconto)
+    - Total pago (Number: totais.total_pago)
+    - Total (Number: totais.total)
+ 
