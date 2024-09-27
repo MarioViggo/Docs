@@ -280,20 +280,19 @@
                 - fornecedores
             - identificadores
 
- ## - Produção de Pedidos (Menu)
- ### - Pedidos (SubMenu)
- ### Endpoint - /pedidos 
+ ### - Monitoramento dos pedidos em produção (SubMenu)
+ ### Endpoint - /linha_producaos 
  ### List
-    - Numero (Number: codigo)
+    - Numero (Number: numero)
     - Cliente (String: pre_cadastro.nome_razao_social)
     - Vendedor (String: vendedor.parceiro.nome_razao_facial)
     - Modelo (String: modelo.descricao)
-    - Linha de Montagem (String: modelo.linha_producao.descricao)
-    - Data de Solicitação (Date: data_hora)
-    - Previsão de Entrega (Date: previsao_entrega)
-    - Refência (String: referencia)
-    - Valor Unitário (Number: valor_unitario)
-    - Quantidade (Number: quantidade)
+    - Qtd. (Number: qtd_original)
+    - Criado dia (Date: data_hora)
+    - Referência (String: referencia)
+    - Entregar dia (Date: previsao_entrega)
+    - Status do Pedido (String: status)
+    - Status do Processo (Boolean: is_processo_finalizado)
     - Valor Total (Number: valor_total)
     - Status (String: status)
 
@@ -302,17 +301,35 @@
         - domaind_id
             - pre_cadastro
             - modelo
-                - linha_producao
                 - pecas
                 - acabamentos
                 - adicionais
                 - materias
+            - imagens
             - vendedor
                 - parceiro
                     - enderecos
                     - contatos
-                - carteira
             - itens
-            - acabamentos
-            - eventos
-            - processos
+                - materia_prima
+                - peca
+                - etapa
+                - adicionais
+                - servicos
+                - etapas
+                - eventos
+
+ ### - Pedidos Relacionados (SubMenu)
+ ### Endpoint - /pedido_lotes 
+ ### List
+    - Numero Pedido (Number: numero_pedido)
+    - Descrição de Linha de Produção (String: linha_producao_descricao)
+    - Descrição do Modelo (String: modelo_descricao)
+    - Vendedor (String: vendedor_nome)
+    - Qtd. Itens Solicitados (Number: qtd_solicitada)
+    - Qtd. Itens Produzidos (Number: qtd_produzida)
+    - Valor Total (Number: valor_total)
+    - Porcetagem de ganho bruto (Number: ganho_bruto)
+    - Custo total do lote (Number: custo_total)
+    - Data da solicitação (Date: data_solicitacao)
+    - Status (String: status)
