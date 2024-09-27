@@ -279,3 +279,40 @@
                 - precos
                 - fornecedores
             - identificadores
+
+ ## - Produção de Pedidos (Menu)
+ ### - Pedidos (SubMenu)
+ ### Endpoint - /pedidos 
+ ### List
+    - Numero (Number: codigo)
+    - Cliente (String: pre_cadastro.nome_razao_social)
+    - Vendedor (String: vendedor.parceiro.nome_razao_facial)
+    - Modelo (String: modelo.descricao)
+    - Linha de Montagem (String: modelo.linha_producao.descricao)
+    - Data de Solicitação (Date: data_hora)
+    - Previsão de Entrega (Date: previsao_entrega)
+    - Refência (String: referencia)
+    - Valor Unitário (Number: valor_unitario)
+    - Quantidade (Number: quantidade)
+    - Valor Total (Number: valor_total)
+    - Status (String: status)
+
+### Three 
+    - pedidos
+        - domaind_id
+            - pre_cadastro
+            - modelo
+                - linha_producao
+                - pecas
+                - acabamentos
+                - adicionais
+                - materias
+            - vendedor
+                - parceiro
+                    - enderecos
+                    - contatos
+                - carteira
+            - itens
+            - acabamentos
+            - eventos
+            - processos
