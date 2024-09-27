@@ -92,7 +92,7 @@
                 - contatos
  
  ## - Matéria Prima (Menu)
- ## - Categoria de Matérias Primas (SubMenu)
+ ### - Categoria de Matérias Primas (SubMenu)
  ### Endpoint - /categoria_materia_primas 
  ### List
     - Código (Number: codigo)
@@ -100,8 +100,7 @@
     - Classficação (String: classficacao)
     - tag (String: tag)
 
-## - Matéria Prima (Menu)
-## - Matéria Prima (SubMenu)
+### - Matéria Prima (SubMenu)
 ### Endpoint - /materia_primas 
 ### List
     - Código (Number: codigo)
@@ -120,8 +119,8 @@
             - unidade
             - fornecedores
 
-## - Matéria Prima (Menu)
-## - Entrada (SubMenu)
+
+### - Entrada (SubMenu)
 ### Endpoint - /rees 
     - Numero (Number: numero)
     - Data (Date: data)
@@ -137,3 +136,94 @@
                 - enderecos
                 - contatos
             - itens
+
+### - Saída (SubMenu)
+### Endpoint - /rses 
+    - Numero (Number: numero)
+    - Data (Date: data)
+    - Observação (Date: observacao)
+    - Status (String: status)
+
+### Three 
+    - rees
+        - domaind_id
+            - itens
+    
+### - Transformação de matéria (SubMenu)
+### Endpoint - /tmps 
+    - Numero (Number: numero)
+    - Data (Date: data_hora)
+    - Observação (String: observacao)
+    - Status (String: status)
+
+### Three 
+    - rees
+        - domaind_id
+            - itens
+            - servicos
+
+### - Ajuste de estoque (SubMenu)
+### Endpoint - /ajuste_materias 
+    - Numero (Number: numero)
+    - Data (Date: data_hora)
+    - Observação (Date: observacao)
+    - Status (String: status)
+
+### Three 
+    - rees
+        - domaind_id
+            - itens
+    
+### - Variações matéria prima (SubMenu)
+### Endpoint - /variacao_materias 
+    - Descrição (String: descricao)
+
+ ## - Produto Acabado (Menu)
+ ### - Categorias do produto (SubMenu)
+ ### Endpoint - /categoria_produtos 
+ ### List
+    - Código (Number: codigo)
+    - Descrição (String: descricao)
+
+ ### - Tabela de preços (SubMenu)
+ ### Endpoint - /tabela_precos 
+ ### List
+    - Código (Number: codigo)
+    - Nome (String: nome)
+
+ ### - Produtos (SubMenu)
+ ### Endpoint - /produtos 
+ ### List
+    - Código (Number: codigo)
+    - Código de Barras (String: nome)
+    - Código de Barras (String: nome)
+    - Descrição (String: descricao)
+    - Estoque (String: quantidade)
+    - Estoque Mínimo (String: qtd_variacoes)
+    - Valor Unitário (String: valor_unitario)
+    - Em Grade (String: usa_grade)
+
+### Three 
+    - produtos
+        - domaind_id
+            - categoria
+            - unidade
+            - imagens
+            - preços
+            - fornecedores
+    
+ ### - Entrada (SubMenu)
+ ### Endpoint - /ree_produtos 
+ ### List
+    - Numero (Number: numero)
+    - Data (Date: data)
+    - Fornecedor (String: forncededor.nome_razao_social)
+    - Status (String: status)
+
+### Three 
+    - ree_produtos
+        - domaind_id
+            - fornecedor
+                - enderecos
+                - contatos
+            - produtos
