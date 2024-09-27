@@ -227,3 +227,55 @@
                 - enderecos
                 - contatos
             - produtos
+
+ ### - Saida (SubMenu)
+ ### Endpoint - /rse_produtos 
+ ### List
+    - Numero (Number: numero)
+    - Data (Date: data)
+    - Observação (String: observacao)
+    - Status (String: status)
+
+### Three 
+    - ree_produtos
+        - domaind_id
+            - produtos
+
+ ### - Entrada de produtos via pedido (SubMenu)
+ ### Endpoint - /tpe_produtos 
+ ### List
+    - Numero (Number: numero)
+    - Data (Date: data)
+    - Observação (String: observacao)
+    - Status (String: status)
+
+### Three 
+    - ree_produtos
+        - domaind_id
+            - itens
+
+ ### - Variações de produto (SubMenu)
+ ### Endpoint - /variacoes 
+ ### List
+    - Descrição (String: descricao)
+
+ ### - Grade de Produtos (SubMenu)
+ ### Endpoint - /produto_variacoes 
+ ### List
+    - SKU (String: sku)
+    - Código de Barras (Date: data)
+    - Categoria (String: produto.categoria.descricao)
+    - Descrição (String: descricao)
+    - Estoque (String: quantidade)
+    - Estoque Mínimo (String: qtd_minima)
+    - Valor (String: valor)
+
+### Three 
+    - ree_produtos
+        - domaind_id
+            - produto
+                - settings_variacoes
+                - categoria
+                - precos
+                - fornecedores
+            - identificadores
