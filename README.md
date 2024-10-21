@@ -490,3 +490,69 @@
     - Total Acréscimo (R$): (Number: valor_desconto)
     - Valor Líquido (R$): (Number: valor_total)
     - Status: (String: cupom.status)
+
+## - Relatórios
+### - Relatórios por estoque de materiais (SubMenu)
+### Endpoint - /categoria_materia_primas 
+### List
+    - Active: (Boolean: active)
+    - Data: (Date: data_hora)
+    - Classificação: (String: classificacao)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao):
+    - Tag: (String: tag)
+
+## - Relatórios
+### - Relatórios por estoque de produtos (SubMenu)
+### Endpoint - /categoria_produtos 
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao):
+
+## - Configurações
+### - Empresa (SubMenu)
+### - Dados da empresa (SubMenu)
+### Endpoint - /domains/{domaind_id}
+### List
+    - Active: (Boolean: active)
+    - Name: (String: name)
+    - Documento (String: doc)
+    - Description: (String: description)
+    - Display Name: (String: display_name)
+    - Settings (JSON: settings)
+    - Contacts Contact (String: contacts.contact)
+    - Contacts Tag (String: contacts.tag)
+    - Addresses Active: (Boolean: addresses.active)
+    - Addresses Bairro: (String: addresses.bairro)
+    - Addresses CEP: (String: addresses.cep)
+    - Addresses Logradouro: (String: addresses.lougradouro)
+    - Addresses Numero: (String: addresses.numero)
+    - Addresses Ponto Referência: (String: addresses.ponto_referencia)
+    - Addresses Municipio Active: (Boolean: addresses.municipio.active)
+    - Addresses Municipio Código IBGE: (Number: addresses.municipio.codigo_ibge)
+    - Addresses Municipio Nome: (String: addresses.municipio.nome)
+    - Addresses Municipio RN: (String: addresses.municipio.silga_uf)
+
+## - Configurações
+### - Empresa (SubMenu)
+### - Configuraçẽos da Empresa (SubMenu)
+### Endpoint - /domains/{domaind_id}/settings
+### PUT
+    - Regras Caixa PDV Acréscimo Máximo: (Number: regras.caixa_pdv.acrescimo_max)
+    - Regras Caixa PDV Bloquear Desconto: (Boolean: regras.caixa_pdv.bloquear_desconto)
+    - Regras Caixa PDV Conferencia Auto: (Boolean: regras.caixa_pdv.conferencia_auto)
+    - Regras Caixa PDV Desconto Máximo: (Number: regras.caixa_pdv.desconto_max)
+    - Regras Caixa PDV Fechamento as cegas: (Boolean: regras.caixa_pdv.fechamentos_as_cegas)
+    - Regras Caixa PDV Forçar Fechamento Caixa: (Boolean: regras.caixa_pdv.forcar_fechamento_caixa)
+    - Regras Caixa PDV Registro Caixa: (Boolean: regras.caixa_pdv.registro_caixa)
+    - Regras Config Financeira Operação Padrão Pagar: (String: regras.config_financeira.operacao_padrao_pagar)
+    - Regras Config Financeira Operação Padrão Receber Caixa: (String: regras.config_financeira.operacao_padrao_receber_caixa)
+    - Regras Config Financeira Operação Padrão Receber Fábrica: (String: regras.config_financeira.operacao_padrao_receber_fabrica)
+    - Regras Config Financeira Operacoes Operacao: (String: regras.config_financeira.operacoes.operacao)
+    - Regras Controle Cliente Limite Crédito: (Boolean: regras.controle.cliente.limite_credito)
+    - Regras Controle Cliente Saldo Crédito: (Boolean: regras.controle.cliente.saldo_credito)
+    - Regras Controle Contas Receber Contas Atraso: (String: regras.controle.conta_receber.contas_atraso)
+    - Regras Controle Contas Receber Dias Tolerancia Juros: (Number: regras.controle.conta_receber.dias_tolerancia_juros: 2)
+    - Regras Controle Contas Receber Taxa Juros Mẽs: (Number: regras.controle.conta_receber.taxa_juro_mes)
+    - 
