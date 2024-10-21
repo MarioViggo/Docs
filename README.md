@@ -491,7 +491,6 @@
     - Valor Líquido (R$): (Number: valor_total)
     - Status: (String: cupom.status)
 
-## - Relatórios
 ### - Relatórios por estoque de materiais (SubMenu)
 ### Endpoint - /categoria_materia_primas 
 ### List
@@ -502,7 +501,6 @@
     - Descrição: (String: descricao):
     - Tag: (String: tag)
 
-## - Relatórios
 ### - Relatórios por estoque de produtos (SubMenu)
 ### Endpoint - /categoria_produtos 
 ### List
@@ -510,7 +508,7 @@
     - Código: (Number: codigo)
     - Descrição: (String: descricao):
 
-## - Configurações
+
 ### - Empresa (SubMenu)
 ### - Dados da empresa (SubMenu)
 ### Endpoint - /domains/{domaind_id}
@@ -534,7 +532,6 @@
     - Addresses Municipio Nome: (String: addresses.municipio.nome)
     - Addresses Municipio RN: (String: addresses.municipio.silga_uf)
 
-## - Configurações
 ### - Empresa (SubMenu)
 ### - Configuraçẽos da Empresa (SubMenu)
 ### Endpoint - /domains/{domaind_id}/settings
