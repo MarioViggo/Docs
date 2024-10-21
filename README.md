@@ -706,3 +706,25 @@
     - Saldo: (Number: saldo)
     - Saldo Inicial: (Number: saldo_inicial)
     - Tipo: (String: tipo)
+
+### - Naturezas Financeiras (SubMenu)
+### Endpoint - /natureza_financeiras
+### List
+    - Active: (Boolean: active)
+    - Descrição: (String: descricao)
+    - Periodicidade: (Boolean: periodicidade)
+    - Tipo: (String: tipo)
+    - Natureza Financeira Active: (Boolean: true)
+    - Natureza Financeira Descrição: (String: natureza_financeira.descricao)
+    - Natureza Financeira Periodicidade: (Boolean: natureza_finacneira.periodicidade)
+
+### - Centro de Resultado (SubMenu)
+### Endpoint - /centro_resultados
+### List
+    - Active: (Boolean: active)
+    - Descrição: (String: descricao)
+
+### - Instituições Financeiras (SubMenu)
+### Endpoint - /centro_resultados
+### List
+    - Active: (Boolean: active)
