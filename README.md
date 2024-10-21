@@ -676,4 +676,33 @@
     - Active: (Boolean: active)
     - Código: (Number: codigo)
     - A Prazo: (Boolean: a_prazo)
+    - Nome: (String: nome)
     - Forma Pagamento Se Faz Descricao: (String: forma_pagamento_sefaz.descricao) 
+    - Forma Pagamento Se Faz Código: (Number: forma_pagamento_sefaz.codigo)
+    - Forma Pagamento Se Faz Tag: (String: forma_pagamento_sefaz.tag)
+
+
+### - Condição de pagamento (SubMenu)
+### Endpoint - /condicao_pagamentos
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Catalogo Usa: (Boolean: catalogo_usa)
+    - Parcelas Dias Prazo: (Number: parcelas.dias_prazo)
+    - Parcelas Numero: (Number: parcelas.numero)
+    - Tabela Preço Active: (Boolean: tabela_preco.active)
+    - Tabela Preço Atualizar Auto: (Boolean: tabela_preco.atualizar_auto)
+    - Tabela Preço Código: (Number: tabela_preco.codigo)
+    - Tabela Preço Nome: (String: tabela_preco.nome)
+    - Tabela Preço Perc Desc Acréscimo: (Number: tabela_preco.perc_desc_acresc)
+
+### - Portadores (SubMenu)
+### Endpoint - /condicao_pagamentos
+### List
+    - Active: (Boolean: active)
+    - Descrição: (String: descricao)
+    - Ligado a terminal: (Boolean: ligado_a_terminal)
+    - Padrão: (Boolean: padrao)
+    - Saldo: (Number: saldo)
+    - Saldo Inicial: (Number: saldo_inicial)
+    - Tipo: (String: tipo)
