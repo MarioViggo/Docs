@@ -728,3 +728,80 @@
 ### Endpoint - /centro_resultados
 ### List
     - Active: (Boolean: active)
+
+### - Configurações -> Produção (Menu)
+### - Peças (SubMenu)
+### Endpoint - /pecas
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao)
+
+### - Modelos (SubMenu)
+### Endpoint - /modelos
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao)
+    - Vinculada a TPF: (Boolean: vinculada_a_tpf)
+    - Acabamentos Conversão: (Number: acabamentos.conversao)
+    - Acabamentos Padrão: (Boolean: acabamentos.padrao)
+    - Adicionais Conversão: (Number: adicionais.conversao)
+    - Linha Produção Active: (Boolean: linha_producao.active)
+    - Linha Produção Descrição: (String: linha_producao.descricao)
+    - Materias Conversão: (Number: materias.conversao)
+    - Peças Conversão: (Number: pecas.conversao)
+    - Peças Peça Obrigatória: (Boolean: pecas.peca_obrigatoria)
+
+### - Categoria de Serviços (SubMenu)
+### Endpoint - /categoria_servicos
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao)
+    - Tag: (String: tag)
+
+### - Prioridades (SubMenu)
+### Endpoint - /prioridades
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao)
+    - Observação: (String: observacao)
+    - Padrão: (Boolean: padrao)
+    - Posição: (Number: posicao)
+    - Quantidade Dias: (Number: qtd_dias)
+
+### - Níveis (SubMenu)
+### Endpoint - /niveis
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao)
+    - Observação: (String: observacao)
+    - Padrão: (Boolean: padrao)
+    - Posição: (Number: posicao)
+    - Quantidade Dias: (Number: qtd_dias)
+
+### - Níveis (SubMenu)
+### Endpoint - /niveis
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao)
+    - Observação: (String: observacao)
+    - Padrão: (Boolean: padrao)
+    - Posição: (Number: posicao)
+    - Quantidade Dias: (Number: qtd_dias)
+
+### - Serviços (SubMenu)
+### Endpoint - /servicos
+### List
+    - Active: (Boolean: active)
+    - Descrição: (String: descricao)
+    - Valor: (Number: valor)
+    - Categoria Serviço Active: (Boolean: categoria_servico.active)
+    - Categoria Serviço Código: (Number: categoria_servico.codigo)
+    - Categoria Serviço Descrição: (String: categoria_servico.descricao)
+    - Categoria Serviço Tag: (String: categoria_servico.tag)
+    
