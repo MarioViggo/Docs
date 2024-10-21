@@ -509,7 +509,7 @@
     - Descrição: (String: descricao):
 
 
-### - Empresa (SubMenu)
+### - Empresa (Menu)
 ### - Dados da empresa (SubMenu)
 ### Endpoint - /domains/{domaind_id}
 ### List
@@ -532,7 +532,7 @@
     - Addresses Municipio Nome: (String: addresses.municipio.nome)
     - Addresses Municipio RN: (String: addresses.municipio.silga_uf)
 
-### - Empresa (SubMenu)
+
 ### - Configuraçẽos da Empresa (SubMenu)
 ### Endpoint - /domains/{domaind_id}/settings
 ### PUT
@@ -586,3 +586,85 @@
             - producao 
             - produto
             - vendedor
+
+### - Expedição (Menu)
+### - Combustível (SubMenu)
+### Endpoint - /combustiveis
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Nome: (String: nome)
+    - Valor: (String: valor)
+
+### - Marca (SubMenu)
+### Endpoint - /marcas
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Nome: (String: nome)
+
+### - Tipo de Serviço Correios (SubMenu)
+### Endpoint - /tipos_servicos_correios
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Nome: (String: nome)
+    - Quantidade Dias: (Number: qtd_dias)
+
+### - Proprietário do Veículo (SubMenu)
+### Endpoint - /proprietario_veiculos
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Nome/Razão Social: (String: parceiro.nome_razao_social)
+    - Nome Fantasia: (String: parceiro.apelido_nome_fantasia)
+    - RNTRC: (String: rntrc)
+    - Registro Estadual: (String: registro_estadual)
+    - TAF: (String: taf)
+    - Tipo TAC: (String: tipo_tac)
+
+### - Modelo de transporte (SubMenu)
+### Endpoint - /modelo_veiculos
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - KM Caixa: (Number: km_caixa)
+    - KM Diferencial: (Number: km_diferencial)
+    - KM Motor: (Number: km_motor)
+    - Nome: (String: nome)
+    - Quantidade Eixos: (Number: qtd_eixos)
+    - Quantidade Pneus: (Number: qtd_pneus)
+
+### - Motorista (SubMenu)
+### Endpoint - /motoristas
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - CNH: (String: cnh)
+    - CNH Categoria: (String: cnh_validade)
+    - Nome/Razão Social: (String: parceiro.nome_razao_social)
+    - CPF/CNPJ: (String: parceiro.cpf_cnpj)
+    - Parceiro Endereços Bairro: (String: parceiro.enderecos.bairro)
+    - Parceiro Endereços CEP: (String: parceiro.enderecos.cep)
+    - Parceiro Endereços Logradouro: (String: parceiro.enderecos.logradouro)
+    - Parceiro Endereços Municipio Nome: (String: parceiro.enderecos.municipio_nome)
+    - Parceiro Endereços Municipio Sigla UF: (String: parceiro.enderecos.municipio_sigla_uf)
+    - Parceiro Endereços Municipio Numero: (String: parceiro.enderecos.numero)
+
+### - Veículo (SubMenu)
+### Endpoint - /veiculos
+### List
+    - Active: (Boolean: active)
+    - Chassi: (String: chassi)
+    - Descrição: (String: descricao)
+    - Placa: (String: placa)
+    - Estado: (String: estado)
+    - Modelo Veículo KM Caixa: (Number: modelo_veiculo.km_caixa)
+    - Modelo Veículo KM Diferencial: (Number: modelo_veiculo.km_diferencial)
+    - Modelo Veículo KM Motor: (Number: modelo_veiculo.km_motor)
+    - Modelo Veículo Nome: (String: modelo_veiculo.nome)
+    - Modelo Veículo Quantidade Eixos: (Number: modelo_veiculo.qtd_eixos)
+    - Modelo Veículo Quantidade Pneus: (Number: modelo_veiculo.qtd_pneus)
+    - Motorista Nome: (String: motorista.parceiro.nome_razao_socail)
+    - Motorista CNH: (String: motorista.cnh)
+    - Motorista CNH Validade: (Date: motorista.cnh_validade)
