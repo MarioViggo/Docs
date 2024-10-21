@@ -468,9 +468,25 @@
     - Status (String: status)
     - Status DH (Date: status_dh)
     - Status Por (String: status_por)
-    - Valor (Number: valor)
+    - q---Valor (Number: valor)
 
 ### Three 
     - movimenacao_financeiras
         - eventos
         - portador
+
+## - Relatórios
+### - Por Vendas (SubMenu)
+### Endpoint - /vendas 
+### List
+    - Active: (Boolean: active)
+    - Data: (Date: data_hora)
+    - CPF/CNPJ: (String: cliente_cpf_cnpj)
+    - Cliente: (String: cliente.parceiro.nome_razao_social)
+    - Cliente Limite Crédito: (Number: cliente.limite_credito):
+    - Vendedor: (Not on current response) 
+    - Valor Bruto (R$): (Number: valor_bruto)
+    - Total Desconto (R$): (Number: valor_desconto)
+    - Total Acréscimo (R$): (Number: valor_desconto)
+    - Valor Líquido (R$): (Number: valor_total)
+    - Status: (String: cupom.status)
