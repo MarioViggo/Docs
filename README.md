@@ -804,4 +804,33 @@
     - Categoria Serviço Código: (Number: categoria_servico.codigo)
     - Categoria Serviço Descrição: (String: categoria_servico.descricao)
     - Categoria Serviço Tag: (String: categoria_servico.tag)
+
+### - Etapas (SubMenu)
+### Endpoint - /etapas
+### List
+    - Active: (Boolean: active)
+    - Descrição: (String: descricao)
+    - Color: (String: color)
+    - Posição: (Number: posicao)
+
+### - Processos (SubMenu)
+### Endpoint - /processos
+### List
+    - Active: (Boolean: active)
+    - Descrição: (String: descricao)
+    - Gerencia Partes: (Boolean: gerencia_partes)
+    - Posição: (Number: posicao)
     
+### - Tipo de erros de produção (SubMenu)
+### Endpoint - /tipo_erros
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    
+### - Vendas (Menu)
+### - Terminais (SubMenu)
+### Endpoint - /terminais
+### List
+    - Active: (Boolean: active)
+    - Descrição: (String: descricao)
+    - Operadores Active: (Boolean: operadores.active)
