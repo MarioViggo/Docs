@@ -555,4 +555,37 @@
     - Regras Controle Contas Receber Contas Atraso: (String: regras.controle.conta_receber.contas_atraso)
     - Regras Controle Contas Receber Dias Tolerancia Juros: (Number: regras.controle.conta_receber.dias_tolerancia_juros: 2)
     - Regras Controle Contas Receber Taxa Juros Mẽs: (Number: regras.controle.conta_receber.taxa_juro_mes)
-    - 
+    - Regras Controle Custos Empresa Aliquota Regime: (Number: regras.controle.custos_empresa.aliquota_regime)
+    - Regras Controle Custos Empresa Custo Administrativo: (Number: regras.controle.custos_empresa.custo_admistrativo)
+    - Regras Controle Custos Empresa Custo Fiscal: (Number: regras.controle.custos_empresa.custo_fiscal)
+    - Regras Controle Custos Empresa Custo Operacional: (Number: regras.controle.custos_empresa.custo_operacional)
+    - Regras Controle Custos Empresa Margem Lucro Padrão: (Number: regras.controle.custos_empresa.margem_lucro_padrao)
+    - Regras Controle Custos Empresa Margem Lucro Porcetagem: (Boolean: regras.controle.custos_empresa.margem_lucro_porcetagem)
+    - Regras Controle Custos Empresa Media Produção: (Number: regras.controle.custos_empresa.media_producao)
+    - Regras Controle Custos Empresa Valor Pauta: (Number: regras.controle.custos_empresa.valor_pauta)
+    - Regras Controle Expedição Obrigar Pagamento Faturar: (Boolean: regras.controle.expedicao.obrigar_pagto_faturar)
+    - Regras Controle Matéria Prima Baixar Estoque: (String: regras.controle.materia_prima.baixar_estoque)
+    - Regras Controle Matéria Prima Controle Estoque: (Boolean: regras.controle.materia_prima.controle_estoque)
+    - Regras Controle Matéria Prima Reajuste Estoque Variação: (String: regras.controle.materia_prima.reajuste_estoque_variacao)
+    - Regras Controle Matéria Prima Taxa Conversão: (Number: regras.controle.materia_prima.taxa_conversao)
+    - Regras Controle Produção Dias Alerta: (Number: regras.controle.producao.dias_alerta)
+    - Regras Controle Produção Meta Produção Diária: (Number: regras.controle.producao.meta_producao_diaria)
+    - Regras Controle Produto Controle Estoque: (Boolean: regras.controle.produto.controle_estoque)
+    - Regras Controle Produto Reajuste Estoque Variação: (String: regras.controle.produto.reajuste_estoque_variacao)
+    - Regras Controle Produto Valor Mínimo: (String: regras.controle.produto.valor_minimo)
+    - Regras Controle Vendedor Saldo Crédito: (Boolean: regras.controle.vendedor.saldo_credito)
+
+### Three 
+    - regras
+        - caixa_pdv
+        - config_financeira
+            - operacoes
+        - controle
+            - cliente
+            - conta_receber
+            - custos_empresa
+            - expedicao 
+            - materia_prima 
+            - producao 
+            - produto
+            - vendedor
