@@ -827,10 +827,56 @@
     - Active: (Boolean: active)
     - Código: (Number: codigo)
     
-### - Vendas (Menu)
+### - Configurações -> Vendas (Menu)
 ### - Terminais (SubMenu)
 ### Endpoint - /terminais
 ### List
     - Active: (Boolean: active)
     - Descrição: (String: descricao)
     - Operadores Active: (Boolean: operadores.active)
+
+### - Tabela de preço da fábrica (SubMenu)
+### Endpoint - /tabela_preco_fabricas
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Descrição: (String: descricao)
+    - Is Modelo Valid: (Boolean: is_modelo_valid)
+    - Modelo Descrição: (String: modelo_descricao)
+    - Valor: (Number: valor)
+    - Acabamentos Active: (Boolean: acabamentos.active)
+    - Acabamentos Conversão: (String: acabamentos.conversao)
+    - Modelo Active: (Boolean: modelo.active)
+    - Modelo Codigo: (Number: modelo.codigo)
+    - Modelo Descrição: (String: modelo.descricao)
+    - Modelo Vinculada a TPF: (Boolean: modelo.vinculada_a_tpf)
+    - Modelo Acabamentos Conversão: (Number: modelo.acabamentos.conversao)
+    - Modelo Acabamentos Padrão: (Boolean: modelo.acabamentos.padrao)
+    - Modelo Adicionais Conversão: (Number: modelo.adicionais.conversao)
+    - Modelo Materias Conversão: (Number: modelo.materias.conversao)
+    - Modelo Pecas Conversao: (Number: modelo.pecas.conversao)
+    - Modelo Peças Peça Obrigatória: (Boolean: modelo.pecas.peca_obrigatoria)
+
+### - Vendas (Menu)
+### - Caixa (SubMenu)
+
+### - Registro dos Caixas (SubMenu)
+### Endpoint - /caixas
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - Detalhes Fechamento: (Array: detalhes_fechamento)
+    - Numero: (Number: numero)
+    - Status: (String: status)
+    - Status DH: (Date: status_dh)
+    - Valor Inicial: (Number: valor_inicial)
+    - Valor Total: (Number: valor_total)
+    - Created By User Active: (Boolean: created_by_user.active)
+    - Created By User Email: (String: created_by_user.email)
+    - Created By User Name: (String: created_by_user.name)
+    - Created By User Settings: (JSON: created_by_user.settings)
+    - Eventos Status: (String: eventos.status)
+    - Eventos Status DH: (Date: eventos.status_dh)
+    - Terminal Active: (Boolean: terminal.active)
+    - Terminal Descrição: (String: terminal.descricao)
+    - Terminal Operadores Active: (Boolean: terminal.active)
