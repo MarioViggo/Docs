@@ -438,3 +438,39 @@
     - Total pago (Number: totais.total_pago)
     - Total (Number: totais.total)
  
+
+## - Relatórios
+### - Por entradas e saídas financeiras (SubMenu)
+### Endpoint - /movimentacao_financeiras 
+### List
+    - Active (Boolean: active)
+    - Conta Receber Pagamento ID (String: conta_receber_pagto_id)
+    - Data MOvimento (Date: data_movimento)
+    - Eventos (Array: eventos)
+    - Eventos Status (String: eventos.status)
+    - Eventos Status DH (Date: eventos.status_dh)
+    - Eventos Status Por (Date: eventos.status_por)
+    - Is Conciliado (Boolean: is_conciliado)
+    - Nome Parceiro (String: nome_parceiro)
+    - Numero (Number: numero)
+    - Observação (String: observacao)
+    - Portador Active: (Boolean: portador.active)
+    - Portador Descricao: (String: portador.descricao)
+    - Portador Descricao: (String: portador.descricao)
+    - Portador Ligado a Terminal: (String: portador.ligado_a_terminal)
+    - Portador Padrão: (Boolean: portador.padrao)
+    - Portador Saldo: (Number: portador.saldo)
+    - Portador Saldo Inicial: (Number: portador.saldo_inicial)
+    - Portador Tipo: (String: portador.tipo)
+    - Portador Ligado a Terminal: (String: portador.ligado_a_terminal)
+    - Portador Ligado a Terminal: (String: portador.ligado_a_terminal)
+    - Portador Ligado a Terminal: (String: portador.ligado_a_terminal)
+    - Status (String: status)
+    - Status DH (Date: status_dh)
+    - Status Por (String: status_por)
+    - Valor (Number: valor)
+
+### Three 
+    - movimenacao_financeiras
+        - eventos
+        - portador
