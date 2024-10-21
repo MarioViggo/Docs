@@ -668,3 +668,12 @@
     - Motorista Nome: (String: motorista.parceiro.nome_razao_socail)
     - Motorista CNH: (String: motorista.cnh)
     - Motorista CNH Validade: (Date: motorista.cnh_validade)
+
+### - Financeiro (Menu)
+### - Formas de pagamento (SubMenu)
+### Endpoint - /forma_pagamentos
+### List
+    - Active: (Boolean: active)
+    - Código: (Number: codigo)
+    - A Prazo: (Boolean: a_prazo)
+    - Forma Pagamento Se Faz Descricao: (String: forma_pagamento_sefaz.descricao) 
