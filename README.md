@@ -880,3 +880,13 @@
     - Terminal Active: (Boolean: terminal.active)
     - Terminal Descrição: (String: terminal.descricao)
     - Terminal Operadores Active: (Boolean: terminal.active)
+
+### - Segurança (Menu)
+### - Usuário (SubMenu)
+### Endpoint - /users
+### List
+    - Active: (Boolean: active)
+    - Descrição: (String: descricao)
+    - Email: (String: email)
+    - Name: (String: name)
+    - Settings: (JSON: settings)
