@@ -1,7 +1,7 @@
 # Entities 
 
 ## - Cliente
-### Endpoint - /pre_cadastros
+### Endpoint - /pre_cadastros (HTTP OK)
 ### List
     - Código (Number: codigo)
     - Apelido/Nome Fantasia
@@ -93,7 +93,7 @@
  
  ## - Matéria Prima (Menu)
  ### - Categoria de Matérias Primas (SubMenu)
- ### Endpoint - /categoria_materia_primas 
+ ### Endpoint - /categoria_materia_primas (HTTP OK)
  ### List
     - Código (Number: codigo)
     - Descrição (String: descricao)
@@ -492,7 +492,7 @@
     - Status: (String: cupom.status)
 
 ### - Relatórios por estoque de materiais (SubMenu)
-### Endpoint - /categoria_materia_primas 
+### Endpoint - /categoria_materia_primas (HTTP OK)
 ### List
     - Active: (Boolean: active)
     - Data: (Date: data_hora)
@@ -589,7 +589,7 @@
 
 ### - Expedição (Menu)
 ### - Combustível (SubMenu)
-### Endpoint - /combustiveis
+### Endpoint - /combustiveis (HTTP OK)
 ### List
     - Active: (Boolean: active)
     - Código: (Number: codigo)
@@ -719,13 +719,13 @@
     - Natureza Financeira Periodicidade: (Boolean: natureza_finacneira.periodicidade)
 
 ### - Centro de Resultado (SubMenu)
-### Endpoint - /centro_resultados
+### Endpoint - /centro_resultados (HTTP OK)
 ### List
     - Active: (Boolean: active)
     - Descrição: (String: descricao)
 
 ### - Instituições Financeiras (SubMenu)
-### Endpoint - /centro_resultados
+### Endpoint - /institucoes_financeiras
 ### List
     - Active: (Boolean: active)
 
@@ -754,8 +754,8 @@
     - Peças Peça Obrigatória: (Boolean: pecas.peca_obrigatoria)
 
 ### - Categoria de Serviços (SubMenu)
-### Endpoint - /categoria_servicos
-### List
+### Endpoint - /categoria_servicos (HTTP OK)
+### List 
     - Active: (Boolean: active)
     - Código: (Number: codigo)
     - Descrição: (String: descricao)
