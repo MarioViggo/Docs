@@ -320,7 +320,7 @@
                 - eventos
 
  ### - Pedidos Relacionados (SubMenu)
- ### Endpoint - /pedido_lotes 
+ ### Endpoint - /pedido_lotes (HTTP OK)
  ### List
     - Numero Pedido (Number: numero_pedido)
     - Descrição de Linha de Produção (String: linha_producao_descricao)
@@ -507,7 +507,6 @@
     - Active: (Boolean: active)
     - Código: (Number: codigo)
     - Descrição: (String: descricao):
-
 
 ### - Empresa (Menu)
 ### - Dados da empresa (SubMenu) (HTTP OK)
