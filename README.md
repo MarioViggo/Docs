@@ -150,7 +150,7 @@
             - itens
     
 ### - Transformação de matéria (SubMenu)
-### Endpoint - /tmps 
+### Endpoint - /tmps (HTTP OK)
     - Numero (Number: numero)
     - Data (Date: data_hora)
     - Observação (String: observacao)
@@ -510,7 +510,7 @@
 
 
 ### - Empresa (Menu)
-### - Dados da empresa (SubMenu)
+### - Dados da empresa (SubMenu) (HTTP OK)
 ### Endpoint - /domains/{domaind_id}
 ### List
     - Active: (Boolean: active)
